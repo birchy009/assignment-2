@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@-moz-viewport { width: device-width: scale:1;}
+@-ms-viewport { width: device-width: scale:1;}
+@-o-viewport { width: device-width: scale:1;}
+@-webkit-viewport { width: device-width: scale:1;}
+@viewport { width: device-width: scale:1;}
+
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+html, body {
+	width: 100%;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	border: 2px solid rgba(0,0,0,1);
+	border-radius: 10px;
+}
+
+header a:link,
+header a:visited,
+main a:link,
+main a:visited {
+	color: #939393;
+}
+
+/*---------------------------------------------- ^ apply to all*/
+
+header {
+	background-color: #000;
+	width: 100%;
+	z-index: 4;
+	overflow: auto;
+}
+
+h1 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	padding-top: 1rem;
+	line-height: 2rem;
+	color: #fff;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+	position: absolute;
+	top: 55px;
+	right: 2.5%;
+	height: 30px;
+	width: 30px;
+	background: transparent url(../images/nav-icon.svg) no-repeat 0 0;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+	display: block;
+	padding: 0.65rem;
+	text-align: center;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-weight: bold;
+	color: #fff;
+	background-color: #333;
+	text-decoration: none;
+	border: 1px double #ccc;
+}
+
+.nav {
+	position: relative;
+	width: 100%;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+	background-color: #666;
+}
+
+.nav-btn[data-state="active"] {
+	background-position: 	-31px 0;
+}
+
+.nav-top {
+	display: none;
+}
+
+.nav-top[data-state="expanded"] {
+	display: block;
+}
+
+/* -------------------------------------------- main body*/
+
+
+main {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0.75rem 0 3.5rem;
+}
+
+main img {
+	width: 85%;
+	margin-bottom: 1.5rem;
+	max-width: 540px;
+}
+
+.billboard {
+	max-width: 400px;
+	height: 12rem;
+	color: #fff;
+	margin: 0 auto;
+	padding: 1.5rem 7.5%;
+	background-color: #666;
+	border-radius: 10px;
+}
+
+table {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+th {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	vertical-align: middle;
+	min-width: 60px;
+	font-size: 0.75rem;
+	line-height: 0.9rem;
+}
+
+td {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 0.7rem;
+	font-size: 0.5rem;
+	vertical-align: middle;
+	min-width: 60px;
+}
+
+.public {
+	/*background-color:#9BE992;*/
+	background-color:#666;
+	color: #fff;
+}
+
+.lane {
+	/*background-color:#FBFF64;*/
+	background-color:#999;
+}
+
+.preschool {
+	/*background-color:#96E9E3;*/
+	background-color: #D3D3D3;
+	font-size: 0.8rem;
+}
+
+.family {
+	/*background-color:#FFB368;*/
+	background-color:#2B2B2B;
+	color: #fff;
+}
+
+/* -------------------------------------------- footer*/
+
+footer a:link,
+footer a:visited {
+	color:#fff;
+}
+
+footer {
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	position: fixed;
+	width: 100%;
+ 	z-index: 3;
+	padding-top: 0.25rem;
+ 	height: 3rem;
+	font-size: 0.7rem;
+	line-height: 0.85rem;
+	bottom: 0;
+}
+
+.phone {
+	font-weight: bold;	
+}
+
+.email {
+	font-style: italic;
+}
